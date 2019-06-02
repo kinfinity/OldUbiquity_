@@ -1,17 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{9a535681-6214-4a46-af19-a881167d2d2c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Engine\Logger">
+      <UniqueIdentifier>{ea822f9a-1451-499c-af5c-4873624f3d58}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Engine\Logger\header">
+      <UniqueIdentifier>{957766b5-77cd-432a-9058-56ab690c4f9f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Profiler">
+      <UniqueIdentifier>{0c439424-9210-4bf3-91e4-dbf19aeb2249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Utils">
+      <UniqueIdentifier>{4463f7ad-4f9d-445b-a075-42bf382a3b3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Logger\headers\logPolicies.h">
+      <Filter>Engine\Logger\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Logger\headers\logBuffer.h">
+      <Filter>Engine\Logger\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Logger\headers\logConstants.h">
+      <Filter>Engine\Logger\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Logger\headers\logTask.h">
+      <Filter>Engine\Logger\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\utils\platform.h">
+      <Filter>Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\utils\utime.h">
+      <Filter>Engine\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\ubiquityEngine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
